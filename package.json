@@ -1,0 +1,37 @@
+{
+  "name": "finance-calculator-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "build": "babel src -d build",
+    "start": "pm2 reload ecosystem.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^12.0.3",
+    "express": "^4.17.2",
+    "express-async-errors": "^3.1.1",
+    "google-auth-library": "^7.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.3.0",
+    "morgan": "^1.10.0",
+    "pm2": "^5.1.2",
+    "randomstring": "^1.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.10",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
